@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+body{
+   background-color: hsla(272, 71%, 81%, 0.3 );
+   margin: 0;
+}
+
+.wrapper { 
+   max-width: 65%;
+   margin: 20px auto;
+   border: solid 1px rgb(238, 218, 238);
+   box-shadow: 2px 2px 8px 3px rgb(211, 184, 207),-2px -2px 8px 3px rgb(211, 184, 207);
+}
+
+.main{
+   max-width: 85%;
+   justify-content: center;
+   flex-flow: row wrap;
+   margin: auto;
+}
+
+h1{
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-size:3vw;
+    font-family: 'Ephesis', cursive;
+    font-weight:lighter;
+    letter-spacing: 10px;
+}
+
+.logo {
+   background-color: hsla(281, 83%, 39%, 1);
+   color: white;
+   box-shadow: 2px 2px 2px 2px rgb(184, 161, 180),-1px -1px 1px 1px rgb(184, 161, 180);
+   margin:10px 5px 0 5px;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.3vw;
+    margin: 15px 30px;
+}
+
+.nav_links {
+    list-style:none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0 5px 0;
+    margin: auto 10px;
+    border: solid 1px rgb(224, 224, 240);
+    border-radius: 5px;
+    background-color: rgba(92, 82, 236, 0.863);
+}
+
+li a {
+    font-family: "Architects Daughter", sans-serif;
+    font-weight: 600;
+    font-size: 1.3vw;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+ 
+}
+
+.nav_links a:hover{
+    color:yellow;
+}
+
+q, p{
+    font-size: 1.05vw;
+}
+
+q a, p a{
+    text-decoration: none;
+}
+
+q a:hover, p a:hover{
+    color:blueviolet;
+}
+
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    padding:  4px;
+    justify-content: center;
+    text-align: center;
+}
+
+.cross_stitch_s img, .puzzles img{
+    height: 200px;
+    padding: 5px;
+    margin: 0 2px;
+}
+
+.cross_stitch_l img {
+    height: 450px;
+    padding: 5px;
+    margin: 0 2px;
+}
+
+.plants img{
+    height: 300px;
+}
+
+.gallery a:hover{
+    opacity: .5;
+    transition: .5s;
+}
+  
+.gallery img{
+   max-width: 100%;
+}
+
+footer{
+    display: flex;
+    height:auto;
+    background: #9e0ce2;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.myphoto img{
+    max-height: 175px;
+    margin-bottom: 3px;
+}
+
+.social img:hover{
+    opacity: 0.7;
+    transition: 0.5;
+}
+
+ .social img{
+    margin:30px 30px 15px 30px;
+    
+}
+
+.social{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+.contact{
+   padding-bottom: 5px;
+}
+
+.author P{
+    color:yellow;
+    font-family: 'Ephesis', cursive;
+    letter-spacing: 1.5px;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+
+
+@media (max-width:1086px){
+   .wrapper{
+       max-width: 80%;
+   }
+   p, q{
+    font-size: 11px;
+}
+.author p{
+    font-size: 16px;
+}
+li a {
+    font-size: 14px;
+}
+h2{
+    font-size: 15px;
+}
+h1{
+    font-size: 21px;
+}
+}
+
+@media (max-width:890px){
+    .wrapper{
+        max-width: 85%;
+    }
+    p, q{
+        font-size: 10px;
+    }
+    .author p{
+        font-size: 15px;
+    }
+    li a {
+        font-size: 12px;
+    }
+    h2{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 19px;
+    }
+ }
+
+ @media (max-width:712px){
+    .social img{
+        margin: 5px;
+    }
+    .wrapper{
+        max-width: 95%;
+    }
+    p, q{
+        font-size: 9px;
+    }
+    .author p{
+        font-size: 14px;
+    }
+    li a {
+        font-size: 11px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 18px;
+    }
+ }
+ 
+ @media (max-width:492px){
+    footer{
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    p, q{
+        font-size: 7px;
+    }
+    .author p{
+        font-size: 12px;
+    }
+    li a {
+        font-size: 8px;
+    }
+    h2{
+        font-size: 10px;
+        margin: 10px 30px 5px 30px; 
+    }
+    h1{
+        font-size: 15px;
+    }
+ }
